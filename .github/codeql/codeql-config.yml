@@ -1,0 +1,15 @@
+name: "Python CodeQL Config"
+
+queries:
+  - uses: security-and-quality
+  - uses: security-extended
+
+paths:
+  - src
+paths-ignore:
+  - tests
+  - '**/*.test.py'
+  - '**/*.spec.py'
+  
+languages:
+  - python
