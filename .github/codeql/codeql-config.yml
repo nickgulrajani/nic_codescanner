@@ -2,7 +2,6 @@ name: "Python CodeQL Config"
 
 queries:
   - uses: security-and-quality
-  - uses: security-extended
 
 paths:
   - src
@@ -11,5 +10,14 @@ paths-ignore:
   - '**/*.test.py'
   - '**/*.spec.py'
   
-languages:
-  - python
+extraction:
+  python:
+    python_setup:
+      version: "3.x"
+    
+language: python
+
+buildless: true
+
+logging:
+  verbosity: info
