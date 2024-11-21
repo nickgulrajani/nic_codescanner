@@ -21,14 +21,12 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v4
 
-    # Initializes the CodeQL tools for scanning
     - name: Initialize CodeQL
       uses: github/codeql-action/init@v2
       with:
-        languages: python    # Direct specification without matrix
+        languages: python  # Direct specification without matrix
         queries: security-and-quality
 
-    # Autobuild attempts to build any compiled languages
     - name: Autobuild
       uses: github/codeql-action/autobuild@v2
 
