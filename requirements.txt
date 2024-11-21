@@ -1,1 +1,4 @@
-# Add your project dependencies here
+# Aflask==2.0.1
+pytest==7.0.1
+sqlalchemy==1.4.23
+pickle5==0.0.11
