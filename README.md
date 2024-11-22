@@ -1,5 +1,5 @@
 # codescanning
-
+# Author - Nicholas Gulrajani 
 Python project with CodeQL scanning setup.
 
 ## Setup
